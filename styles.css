@@ -5,12 +5,12 @@ body{
     margin: 0;
 }
 #container{
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
-    background-color: blue;
-    padding: 40px;
-    border-left: black;
-    border-right: black;
+    background-color: rgb(96, 96, 223);
+    padding: 30px 60px;
+    border-left: white;
+    border-right: white;
 }
 h1{
     background-color: black;
@@ -74,9 +74,9 @@ h3:hover{
     width: 250px;
 }
 #pic3{
-    float: right;
-    margin-right: 0;
-    margin-left: 20px;
+    float: left;
+    margin-right: 20;
+    margin-left: 0px;
     width: 300px;
     height: 200px;
 }
@@ -90,4 +90,57 @@ h3:hover{
 }
 .highlight:hover{
     background-color: orange;
+}
+#sidebar{
+    background-color: black;
+    width: 225px;
+    float: right;
+    border: 2px solid white;
+    margin: 15px;
+    margin-top: 80px;
+    line-height: 2.25em;
+}
+#sidebar h3{
+    padding: 5px; 
+    width: 200px;
+    background-color:none;
+    color:rgb(68, 133, 206);
+    text-decoration: underline;
+    font-size: 1.5em;
+    margin: 5px;
+    border: none;
+}
+p{
+    text-align: justify;
+}
+@media (max-width:1200px){
+    #container{
+        background-color: rgb(189, 200, 227);
+    }
+}
+@media (max-width: 992px){
+    #container{
+        width: 100%;
+    }
+    #container, p{
+        margin:0;
+        padding: 0;
+        border: none;
+    }
+    h1,h2,h3,p,body,div{
+        background-color: rgb(189, 200, 227)!important;
+    }
+}
+@media (max-widthL: 768px){
+    #sidebar{
+        display: none;
+    }
+    img,#pic1,#pic2{
+        clear:both;
+        border: none;
+        width: 100%;
+    }
+    h3{
+        margin:10px auto;
+    }
 }
