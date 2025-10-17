@@ -43,6 +43,7 @@ img{
     border-radius: 15px;
     margin-right: 20px;
 }
+}
 a:link{
     color: rgb(68, 133, 206);
     text-decoration: none;
@@ -110,8 +111,12 @@ h3:hover{
     margin: 5px;
     border: none;
 }
-p{
+.paragraphandstuff{
     text-align: justify;
+    border: 2px dashed;
+    background-color: rgb(73, 73, 150);
+    margin-bottom: 20px;
+    padding: 30px;
 }
 @media (max-width:1200px){
     #container{
